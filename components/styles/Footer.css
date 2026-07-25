@@ -1,0 +1,80 @@
+/* Main Footer Wrapper */
+.lab-footer {
+  background-color: #1c2732; /* Matches the dark background in your image */
+  color: #f8f9fa;
+  padding: 60px 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+  padding-left: 18%;
+}
+
+/* Grid Layout for Columns */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Headings */
+.footer-section h3.footer-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Text & Paragraphs */
+.footer-section p {
+  line-height: 1.6;
+  color: #dddd;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Lists (Links & Locations) */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+  color: #dddd;
+  font-size: 0.95rem;
+}
+
+/* Link Styling & Hover State */
+.footer-section ul li a {
+  color: #dddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #4a7c8e; /* Matches the muted teal button color in your image */
+}
+
+.footer-section a{
+  color: #dddd;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #2a3a4a;
+  color: #dddd;
+  font-size: 0.9rem;
+}

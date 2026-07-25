@@ -1,0 +1,102 @@
+section.hero {
+  display: flex;
+  min-height: 90dvh;
+  background-color: var(--color-bg-surface);
+}
+
+.big-font {
+  width: 35%;
+  margin: 12%;
+  margin-top: 7%;
+}
+
+.big-font > img {
+    margin-left: -9%;
+    display: none;
+}
+
+.big-font > h1 {
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.big-font > p {
+  width: 90%;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 0.4rem;
+}
+
+.artwork {
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  padding-right: 6%;
+  margin-top: 8%;
+}
+
+.artwork > img {
+  width: 400px;
+  align-items: end;
+}
+
+/* --- New CTA Button Styles --- */
+/* Base Button State */
+.cta-btn {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: #365D65; 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 1); 
+  /* Add a transparent border so the button dimensions don't jump when the hover border appears */
+  border: 1px solid transparent; 
+  border-radius: 8px; 
+  margin-top: 15px;
+  padding: 0.875rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  
+  /* Applying the identical buttery-smooth cubic-bezier transition from your NavBar */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+}
+
+/* Glassy Hover State */
+.cta-btn:hover {
+  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: rgba(2, 132, 199, 0.15); 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(0, 0, 0, 0.8); 
+  
+  /* 5. The physical iOS press shrink */
+  transform: scale(0.95); 
+}
+
+/* Active State (When clicked) */
+.cta-btn:active {
+  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+}

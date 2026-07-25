@@ -1,0 +1,80 @@
+.faq-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  
+}
+
+.faq-title {
+  text-align: center;
+  color: #242424; /* A trustworthy, clinical dark blue */
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+/* Highlight the box slightly when it's open */
+.faq-item.active {
+  border-color: #3b82f6; 
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: #f8fafc;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  font-weight: 300;
+  width: 24px;
+  text-align: center;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: #475569;
+  line-height: 1.6;
+  border-top: 1px solid #f1f5f9;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  /* Simple fade-in animation for the text */
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

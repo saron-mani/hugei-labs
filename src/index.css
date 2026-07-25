@@ -1,0 +1,68 @@
+/* Color Pallete Variables Here*/
+:root {
+  /* Core Brand Colors */
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+
+  /* Neutrals for backgrounds and text */
+  --color-bg-bright: #909099;
+  --color-bg-dark: #181818;
+  --color-bg-surface: #F2FFFF;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+}
+
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.flow-circular-regular {
+  font-family: "Flow Circular", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+  text-align: justify;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+

@@ -1,0 +1,154 @@
+/* Container styling to match the spacious sections in your reference image */
+.home-collection-section {
+  padding: 80px 20px;
+  background-color: #112731;
+  color: #e2e8f0;
+  min-height: 60vh;
+}
+
+/* Flexbox is used here to split the layout 50/50 */
+.home-collection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.home-collection-artwork {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-collection-artwork {
+  height: 30dvw;
+}
+
+/* Temporary placeholder styling - you can delete this once you add your SVG */
+.svg-placeholder {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 4 / 3;
+  background-color: #f1f5f9;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-family: monospace;
+}
+
+.home-collection-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-collection-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.home-collection-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #bbbbbb;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.benefits-list li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkmark {
+  color: #2196F3; /* Adjust to match the blue in your logo */
+  font-weight: bold;
+}
+
+/* Styled similarly to the buttons in your layout */
+ .book-now-btn {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: #365D65; 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 0.8); 
+  /* Add a transparent border so the button dimensions don't jump when the hover border appears */
+  border: 1px solid transparent; 
+  border-radius: 8px; 
+  padding: 0.875rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  width: 250px;
+  
+  /* Applying the identical buttery-smooth cubic-bezier transition from your NavBar */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+}
+
+/* Glassy Hover State */
+.book-now-btn:hover {
+  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: rgba(2, 132, 199, 0.15); 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 0.8); 
+  
+  /* 5. The physical iOS press shrink */
+  transform: scale(0.95); 
+}
+
+/* Active State (When clicked) */
+.book-now-btn:active {
+  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+}
+
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 768px) {
+  .home-collection-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .book-now-btn {
+    align-self: center;
+  }
+  
+  .benefits-list li {
+    justify-content: center;
+  }
+}

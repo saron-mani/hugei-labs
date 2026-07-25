@@ -1,0 +1,45 @@
+import React from 'react';
+import './styles/HomeCollection.css';
+// import your SVG file here once you have it
+// import { ReactComponent as HomeCollectionImg } from './assets/home-collection.svg'; 
+
+const HomeCollection = () => {
+  return (
+    <section className="home-collection-section">
+      <div className="home-collection-container">
+
+        {/* Left Side: SVG Artwork */}
+        <div className="home-collection-artwork">
+            <img src="../src/assets/art-home-collection.svg" alt="home collection" />
+        </div>
+
+        {/* Right Side: Text and Call to Action */}
+        <div className="home-collection-content">
+          <h2>Home Sample Collection</h2>
+          <p>
+            Get tested from the comfort and safety of your home. Our certified 
+            professionals ensure a quick, hygienic, and hassle-free sample 
+            collection process at your doorstep.
+          </p>
+          
+          <ul className="benefits-list">
+            <li>
+              <span className="checkmark">✓</span> Flexible scheduling
+            </li>
+            <li>
+              <span className="checkmark">✓</span> Strict hygiene protocols
+            </li>
+            <li>
+              <span className="checkmark">✓</span> Accurate, timely online reports
+            </li>
+          </ul>
+
+          <button className="book-now-btn">Book a Home Visit</button>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default HomeCollection;

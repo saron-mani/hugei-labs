@@ -1,0 +1,103 @@
+.about-section {
+  /* A soft, clinical blue-gray that conveys hygiene and trust */
+  background: 
+  linear-gradient(rgba(235, 253, 226, 0.5), rgba(255, 255, 255, 0.6)),
+  url(../../src/assets/texture.jpg);
+  padding: 5rem 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center; /* Centering works best for short summary sections */
+  min-height: 85dvh;
+}
+
+.about-container {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 12%;
+}
+
+.about-heading {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+  color: #0f172a; /* Deep, authoritative slate color */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #475569; /* Softer text color for readability */
+}
+
+/* Base Button State */
+.about-button {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: #365D65; 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 0.8); 
+  /* Add a transparent border so the button dimensions don't jump when the hover border appears */
+  border: 1px solid transparent; 
+  border-radius: 8px; 
+  padding: 0.875rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  
+  /* Applying the identical buttery-smooth cubic-bezier transition from your NavBar */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+}
+
+/* Glassy Hover State */
+.about-button:hover {
+  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: rgba(2, 132, 199, 0.15); 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(0, 0, 0, 0.8); 
+  
+  /* 5. The physical iOS press shrink */
+  transform: scale(0.95); 
+}
+
+/* Active State (When clicked) */
+.about-button:active {
+  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .about-heading {
+    font-size: 1.85rem;
+  }
+  
+  .about-content p {
+    font-size: 1.05rem;
+  }
+  
+  .about-button {
+    width: 100%; /* Makes the button full-width on mobile for easier tapping */
+  }
+}

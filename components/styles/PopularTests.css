@@ -1,0 +1,181 @@
+/* 1. Main Section: Reduced top/bottom padding */
+.diagnostics-section {
+  padding: 1rem 2rem; /* Cut down from 1.5rem */
+  background-color: #152028; /* The deep slate navy */
+  color: #e2e8f0; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-family: "Roboto", sans-serif;
+  min-height: 90dvh;
+  padding-top: 6%;
+}
+
+.diagnostics-container {
+  max-width: 920px; 
+  width: 100%;
+}
+
+/* 2. Headers: Tighter margins and slightly scaled down text */
+.diagnostics-header {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem; /* Cut down from 2rem */
+  text-align: center;
+  position: relative;
+}
+
+.diagnostics-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px; 
+  height: 3px;
+  background-color: #00b4d8; 
+  border-radius: 2px;
+}
+
+.diagnostics-header h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 2.25rem; /* Scaled down slightly */
+  color: #ffffff; 
+  margin: 0 0 0.25rem 0;
+  letter-spacing: 0.5px;
+}
+
+.diagnostics-header p {
+  color: #94a3b8; 
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.diagnostics-layout-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem; 
+  margin-bottom: 0.75rem; /* Tucked the button closer to the boxes */
+}
+
+/* 3. Containers: Shaved down the inner padding */
+.diagnostics-column {
+  background-color: #1c2a35; 
+  border: 1px solid #2a3b4a; 
+  border-radius: 12px;
+  padding: 1rem 1.5rem; /* Cut down significantly to save vertical space */
+  display: flex;
+  flex-direction: column; 
+}
+
+.section-subheader {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.35rem; /* Scaled down slightly */
+  color: #ffffff;
+  margin: 0 0 0.5rem 0; /* Cut down margin */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #2a3b4a;
+  display: block;
+}
+
+.diagnostics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0; 
+  flex-grow: 1; 
+}
+
+/* 4. List Items: The biggest space-saver */
+.diagnostic-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Scaled down slightly */
+  color: #cbd5e1;
+  padding: 0.6rem 0.5rem; /* Highly condensed vertical padding */
+  border-bottom: 1px solid #253542;
+  transition: all 0.2s ease; 
+  border-radius: 6px; 
+}
+
+.diagnostic-item:hover {
+  background-color: #233442; 
+  transform: translateX(4px); 
+  color: #ffffff;
+  cursor: default;
+}
+
+/* Icons */
+.check-icon {
+  width: 16px; /* Scaled down to match the new item height */
+  height: 16px;
+  color: #00b4d8; 
+  margin-right: 10px; 
+  flex-shrink: 0;
+}
+
+.package-icon {
+  color: #0077b6; 
+}
+
+.diagnostics-action {
+  display: flex;
+  justify-content: center; 
+  margin-top: 0.9rem; 
+  height: 3.4rem;
+}
+
+/* 5. Button:*/
+
+.btn-outline {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: #365D65; 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 0.8); 
+  /* Add a transparent border so the button dimensions don't jump when the hover border appears */
+  border: 1px solid transparent; 
+  border-radius: 8px; 
+  padding: 0.875rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  
+  /* Applying the identical buttery-smooth cubic-bezier transition from your NavBar */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+}
+
+/* Glassy Hover State */
+.btn-outline:hover {
+  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+  background: rgba(2, 132, 199, 0.15); 
+  
+  /* 2. Apply the frosted glass blur and saturation boost */
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  
+  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    
+  /* 4. Switch the text to the solid brand blue so it remains readable */
+  color: rgba(255, 255, 255, 0.75); 
+  
+  /* 5. The physical iOS press shrink */
+  transform: scale(0.95); 
+}
+
+/* Active State (When clicked) */
+.btn-outline:active {
+  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+}
