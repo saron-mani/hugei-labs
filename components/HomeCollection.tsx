@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/HomeCollection.css';
+import AppleButton from './AppleButton';
 // import your SVG file here once you have it
 // import { ReactComponent as HomeCollectionImg } from './assets/home-collection.svg'; 
 
@@ -33,8 +34,7 @@ const HomeCollection = () => {
               <span className="checkmark">✓</span> Accurate, timely online reports
             </li>
           </ul>
-
-          <button className="book-now-btn">Book a Home Visit</button>
+          <AppleButton text="Book a Home Visit" />
         </div>
 
       </div>

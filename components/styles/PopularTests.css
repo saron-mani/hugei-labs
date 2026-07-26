@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  font-family: "Roboto", sans-serif;
   min-height: 90dvh;
   padding-top: 6%;
 }
@@ -37,12 +36,14 @@
 }
 
 .diagnostics-header h2 {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 2.25rem; /* Scaled down slightly */
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
   color: #ffffff; 
   margin: 0 0 0.25rem 0;
   letter-spacing: 0.5px;
 }
+
 
 .diagnostics-header p {
   color: #94a3b8; 
@@ -69,7 +70,8 @@
 
 .section-subheader {
   font-family: "PT Sans Narrow", sans-serif;
-  font-size: 1.35rem; /* Scaled down slightly */
+  font-weight: 500;
+  font-size: 1.55rem; /* Scaled down slightly */
   color: #ffffff;
   margin: 0 0 0.5rem 0; /* Cut down margin */
   padding-bottom: 0.5rem;
@@ -91,7 +93,7 @@
 .diagnostic-item {
   display: flex;
   align-items: center;
-  font-size: 1rem; /* Scaled down slightly */
+  font-size: 1.1rem; /* Scaled down slightly */
   color: #cbd5e1;
   padding: 0.6rem 0.5rem; /* Highly condensed vertical padding */
   border-bottom: 1px solid #253542;

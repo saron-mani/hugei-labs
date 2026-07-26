@@ -49,9 +49,10 @@
 }
 
 .home-collection-content h2 {
+  font-family: "Faculty Glyphic", sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 16px;
   font-weight: 700;
+  margin-bottom: 16px;
   letter-spacing: -0.5px;
 }
 

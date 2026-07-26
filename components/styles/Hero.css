@@ -12,14 +12,9 @@ section.hero {
   margin-top: 7%;
 }
 
-.big-font > img {
-    margin-left: -9%;
-    display: none;
-}
-
 .big-font > h1 {
-    font-size: 6rem;
-    line-height: 4.6rem;
+  font-size: 6rem;
+  line-height: 4.6rem;
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -32,6 +27,10 @@ section.hero {
   font-size: 0.8rem;
   margin-top: 10px;
   margin-left: 0.4rem;
+}
+
+hr {
+  margin: 14px;
 }
 
 .artwork {

@@ -1,7 +1,6 @@
-
 .apple-button {
   /* Base State: Glassy effect */
-  background: rgba(2, 132, 199, 0.15);
+  background: #CEEDF7;
   backdrop-filter: blur(20px) saturate(150%);
   -webkit-backdrop-filter: blur(20px) saturate(150%);
   border: 1px solid rgba(2, 132, 199, 0.3);

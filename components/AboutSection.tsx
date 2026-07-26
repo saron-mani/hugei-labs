@@ -1,4 +1,5 @@
 import React from 'react';
+import AppleButton from "./AppleButton"
 import './styles/AboutSection.css';
 
 const AboutSection: React.FC = () => {
@@ -16,14 +17,7 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Note: If you are using react-router-dom, you can swap this standard button 
-            for a <Link to="/about"> component instead */}
-        <button 
-          className="about-button" 
-          onClick={() => window.location.href = '/about'}
-        >
-          Read Our Full Story
-        </button>
+        <AppleButton text="Read More About Us" />
       </div>
     </section>
   );

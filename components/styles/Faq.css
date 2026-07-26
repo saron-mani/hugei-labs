@@ -2,15 +2,14 @@
   max-width: 800px;
   margin: 3rem auto;
   padding: 2rem;
-  font-family: system-ui, -apple-system, sans-serif;
-  
 }
 
 .faq-title {
   text-align: center;
   color: #242424; /* A trustworthy, clinical dark blue */
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 

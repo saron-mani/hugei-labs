@@ -23,14 +23,16 @@
 /* Headings */
 .footer-section h3.footer-brand {
   color: #ffffff;
+  font-family: "Faculty Glyphic", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 15px;
-  font-weight: 600;
 }
 
 .footer-section h4 {
   color: #ffffff;
-  font-size: 1.8rem;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 20px;
   position: relative;
 }
