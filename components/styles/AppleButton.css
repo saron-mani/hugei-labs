@@ -1,0 +1,39 @@
+
+.apple-button {
+  /* Base State: Glassy effect */
+  background: rgba(2, 132, 199, 0.15);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+
+  /* Layout & Typography */
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 0.875rem 2.25rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  /* Smooth transition */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hover State: Solid background with click/press feedback */
+.apple-button:hover {
+  background: #365D65;
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(80px) saturate(150%);
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
+  
+  /* iOS press shrink */
+  transform: scale(0.95);
+}
+
+/* Active State (When clicked) */
+.apple-button:active {
+  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+}

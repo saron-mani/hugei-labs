@@ -1,6 +1,8 @@
 /* Main Footer Wrapper */
 .lab-footer {
   background-color: #1c2732; /* Matches the dark background in your image */
+  background-image: url("data:image/svg+xml,%3Csvg%20viewBox='0%200%20800%20800'%20height='400'%20width='400'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cg%20stroke-width='0.5'%20stroke='%233A506B'%20fill='none'%3E%3Cpath%20d='M769,229%20L1037,260.9%20M927,880%20L731,737%20520,660%20309,538%2040,599%20295,764%20126.5,879.5%2040,599%20-197,493%20102,382%20-31,229%20126.5,79.5%20-69,-63'/%3E%3Cpath%20d='M-31,229%20L237,261%20390,382%20603,493%20308.5,537.5%20101.5,381.5%20M370,905%20L295,764'/%3E%3Cpath%20d='M520,660%20L578,842%20731,737%20840,599%20603,493%20520,660%20295,764%20309,538%20390,382%20539,269%20769,229%20577.5,41.5%20370,105%20295,-36%20126.5,79.5%20237,261%20102,382%2040,599%20-69,737%20127,880'/%3E%3Cpath%20d='M520,-140%20L578.5,42.5%20731,-63%20M603,493%20L539,269%20237,261%20370,105%20M902,382%20L539,269%20M390,382%20L102,382'/%3E%3Cpath%20d='M-222,42%20L126.5,79.5%20370,105%20539,269%20577.5,41.5%20927,80%20769,229%20902,382%20603,493%20731,737%20M295,-36%20L577.5,41.5%20M578,842%20L295,764%20M40,-201%20L127,80%20M102,382%20L-261,269'/%3E%3C/g%3E%3Cg%20fill='%23507293'%3E%3Ccircle%20r='5'%20cy='382'%20cx='390'/%3E%3Ccircle%20r='5'%20cy='261'%20cx='237'/%3E%3Ccircle%20r='5'%20cy='42'%20cx='578'/%3E%3Ccircle%20r='5'%20cy='105'%20cx='370'/%3E%3Ccircle%20r='5'%20cy='80'%20cx='127'/%3E%3Ccircle%20r='5'%20cy='382'%20cx='102'/%3E%3Ccircle%20r='5'%20cy='599'%20cx='40'/%3E%3Ccircle%20r='5'%20cy='764'%20cx='295'/%3E%3Ccircle%20r='5'%20cy='538'%20cx='309'/%3E%3Ccircle%20r='5'%20cy='660'%20cx='520'/%3E%3Ccircle%20r='5'%20cy='737'%20cx='731'/%3E%3Ccircle%20r='5'%20cy='493'%20cx='603'/%3E%3Ccircle%20r='5'%20cy='269'%20cx='539'/%3E%3Ccircle%20r='5'%20cy='229'%20cx='769'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
   color: #f8f9fa;
   padding: 60px 0 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,7 +39,7 @@
 .footer-section p {
   line-height: 1.6;
   color: #dddd;
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -51,7 +53,7 @@
 .footer-section ul li {
   margin-bottom: 12px;
   color: #dddd;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* Link Styling & Hover State */
@@ -74,7 +76,7 @@
   text-align: center;
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px solid #2a3a4a;
+  border-top: 1px dashed #2a3a4a;
   color: #dddd;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }

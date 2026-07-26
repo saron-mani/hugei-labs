@@ -129,7 +129,7 @@
 /* 5. Button:*/
 
 .btn-outline {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
-  background: #365D65; 
+  background: #D1EEF7;
   
   /* 2. Apply the frosted glass blur and saturation boost */
   backdrop-filter: blur(80px) saturate(150%);

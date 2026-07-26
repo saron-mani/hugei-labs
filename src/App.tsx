@@ -1,22 +1,16 @@
-import Hero from "../components/Hero"
-import NavBar from "../components/NavBar"
-import PopularTests from "../components/PopularTests"
-import Faq from "../components/Faq"
-import HomeCollection from "../components/HomeCollection"
-import AboutSection from "../components/AboutSection"
-import Footer from "../components/Footer"
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
+import Home from "./Pages/Home"
+import Tests from "./Pages/Tests"
 import "./App.css"
 
 export default function App() {
   return(
-  <>
-    <NavBar />
-    <Hero />
-    <PopularTests />
-    <Faq />
-    <HomeCollection />
-    <AboutSection />
-    <Footer />
-  </>
-)
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="/tests" element={<Tests />} />
+      </Routes>
+    </Router>
+  )
 }

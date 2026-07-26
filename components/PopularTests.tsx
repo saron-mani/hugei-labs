@@ -1,4 +1,5 @@
 import React from 'react';
+import AppleButton from './AppleButton';
 import './styles/PopularTests.css';
 
 interface DiagnosticItem {
@@ -68,9 +69,8 @@ const PopularTestsSection: React.FC = () => {
         </div>
 
         <div className="diagnostics-action">
-          <button className="btn-outline">
-            See All Tests & Prices <span>&rarr;</span>
-          </button>
+          
+          <AppleButton text="All Tests and Prices" />
         </div>
 
       </div>
