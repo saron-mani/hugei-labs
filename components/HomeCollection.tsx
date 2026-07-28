@@ -34,7 +34,7 @@ const HomeCollection = () => {
               <span className="checkmark">✓</span> Accurate, timely online reports
             </li>
           </ul>
-          <AppleButton text="Book a Home Visit" />
+          <AppleButton text="Book a Home Visit" to="#" />
         </div>
 
       </div>

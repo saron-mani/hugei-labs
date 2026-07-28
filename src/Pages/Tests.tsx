@@ -5,8 +5,8 @@ export default function Tests() {
     return(
         <>
         <Navbar />
-        <PageHero />
-        <Footer />
+        <PageHero text="Price List" subText="All our tests and price list." />
+        {/*<Footer />*/}
         </>
     )
 }
