@@ -6,7 +6,7 @@ export default function AppleButton(props:{
 }) {
 
     function handleClick(link:string) {
-        window.location.href=link
+        window.location.href=link;
     }
 
     return(
