@@ -6,10 +6,29 @@ import PageHero from "../../components/PageHero"
 import Footer from "../../components/Footer";
 
 function Tests() {
+
+  const [searchQuery, setSearchQuery]=React.useState("")
+
+  const filteredTestsArray = PriceListArray.filter((item) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      item.name.toLowerCase().includes(query) ||
+      item.department.toLowerCase().includes(query)
+    );
+  });
+
   return(
     <section className="tests">
       <h2>Individual Tests</h2>
       <div className="table-container"> 
+        <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search by name or department..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </div>
           <table>
             <thead>
               <tr>
@@ -21,7 +40,7 @@ function Tests() {
             </thead>
             <tbody>
         
-        {PriceListArray.map((item:{
+        {filteredTestsArray.map((item:{
         id:number,
         name:string,
         price:number,

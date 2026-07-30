@@ -21,7 +21,7 @@ section.hero {
 }
 
 .big-font > p {
-  width: 90%;
+  width: 60%;
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 0.8rem;
@@ -39,7 +39,7 @@ hr {
   align-items: end;
   justify-content: right;
   padding-right: 6%;
-  margin-top: 8%;
+  padding-bottom: 3%;
 }
 
 .artwork > img {

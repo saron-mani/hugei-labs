@@ -6,7 +6,7 @@ import AppleButton from './AppleButton';
 
 const HomeCollection = () => {
   return (
-    <section className="home-collection-section">
+    <section id="HomeCollection" className="home-collection-section">
       <div className="home-collection-container">
 
         {/* Left Side: SVG Artwork */}
@@ -34,7 +34,7 @@ const HomeCollection = () => {
               <span className="checkmark">✓</span> Accurate, timely online reports
             </li>
           </ul>
-          <AppleButton text="Book a Home Visit" to="#" />
+          <AppleButton text="Book a Home Visit" to="#contact" />
         </div>
 
       </div>

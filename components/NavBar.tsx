@@ -20,11 +20,11 @@ const Navbar = () => {
 
         {/* Navigation Links (Right on Desktop) */}
         <ul className={`navbar-menu roboto-400 ${isMobileMenuOpen ? 'is-open' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="../">Home</a></li>
+          <li><a href="../#about">About Us</a></li>
+          <li><a href="../#tests">Tests</a></li>
+          <li><a href="../#HomeCollection">Home Collection</a></li>
+          <li><a href="../#contact">Contact</a></li>
         </ul>
 
         {/* Mobile Toggle Button (Visible only on Mobile) */}

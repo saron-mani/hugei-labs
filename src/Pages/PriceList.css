@@ -7,17 +7,29 @@ section.tests {
 
 /* Container to handle horizontal scrolling on smaller screens */
 .table-container {
-    height: 60%;
+  height: 64%;
   overflow-x: auto;
   overflow-y: scroll;
   margin: 20px 0;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container > input{
+padding: 10px 15px;
+width: 100%;
+max-width: 400px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 1.2rem;
 }
 
 /* Base table styling */
 .table-container > table {
   width: 100%;
   border-collapse: collapse; /* Removes double borders */
-  font-family: sans-serif;
   font-size: 14px;
   text-align: left;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -25,16 +37,18 @@ section.tests {
 
 /* Table Header styling */
 .table-container > table th {
-  background-color: #009879;
-  color: #ffffff;
+  color: white;
   padding: 12px 15px;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #112731;
 }
 
 /* Table Body Cells styling */
 .table-container > table td {
   padding: 12px 15px;
   border-bottom: 1px solid #dddddd;
+  font-size: 1rem;
 }
 
 /* Alternating row colors (Zebra striping) */

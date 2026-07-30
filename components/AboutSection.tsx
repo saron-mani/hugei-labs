@@ -4,7 +4,7 @@ import './styles/AboutSection.css';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
         <h2 className="about-heading">Committed to Clinical Excellence</h2>
         
@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        <AppleButton text="Read More About Us" />
+        <AppleButton text="Read More About Us" to="/#contact" />
       </div>
     </section>
   );

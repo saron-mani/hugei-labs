@@ -26,7 +26,7 @@ const healthPackages: DiagnosticItem[] = [
 
 const PopularTestsSection: React.FC = () => {
   return (
-    <section className="diagnostics-section">
+    <section id="tests" className="diagnostics-section">
       <div className="diagnostics-container">
         
         <div className="diagnostics-header">
