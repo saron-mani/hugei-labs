@@ -44,7 +44,7 @@ body {
   padding: 0 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(0,0,0,0));
+  background: linear-gradient(to right, rgba(200,200,200,0.4), rgba(0,0,0,0));
 }
 
 .navbar-brand {
@@ -74,8 +74,8 @@ body {
 .navbar-menu a {
   color: var(--color-text-main);
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
   padding: 0.6rem 1.2rem;
   border-radius: 18px; 
   

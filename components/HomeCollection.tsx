@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './styles/HomeCollection.css';
 import AppleButton from './AppleButton';
 // import your SVG file here once you have it

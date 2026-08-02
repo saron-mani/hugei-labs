@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import "./styles/AppleButton.css"
 
 export default function AppleButton(props:{
@@ -5,8 +6,10 @@ export default function AppleButton(props:{
     to:string
 }) {
 
+    const navigate=useNavigate();
+
     function handleClick(link:string) {
-        window.location.href=link;
+        navigate(link);
     }
 
     return(

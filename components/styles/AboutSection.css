@@ -25,10 +25,10 @@
 }
 
 .about-content p {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.7;
   margin-bottom: 2.5rem;
-  color: #475569; /* Softer text color for readability */
+  color: #666666;
 }
 
 /* Base Button State */

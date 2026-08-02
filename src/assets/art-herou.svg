@@ -7,7 +7,7 @@
 <g id="OBJECTS">
 	<g>
 		
-			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -104.2429 242.7628)" style="fill:#D4F9EC;" cx="240.919" cy="247.214" rx="220.625" ry="220.625"/>
+			<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -104.2429 242.7628)" style="fill:#112731;" cx="240.919" cy="247.214" rx="220.625" ry="220.625"/>
 		<g style="opacity:0.28;">
 			<path style="fill:#B2B7FF;" d="M88.006,164.007l9.637-0.17l-0.212,32.434h-8.533v-0.085l-0.043,0.085L77.011,181.2l0.467,15.028
 				l-9.892,0.297l-0.382-32.816l9.255,0.297l11.972,15.198L88.006,164.007z"/>
@@ -100,7 +100,7 @@
 				c2.914,0.085,5.532,0.792,7.854,2.122c2.32,1.331,3.481,3.651,3.481,6.963c0,2.235-0.546,4.217-1.635,5.943
 				c-1.09,1.727-2.568,3.07-4.436,4.032c-1.868,0.963-3.934,1.443-6.198,1.443C220.964,349.311,218.629,348.838,216.252,347.89z"/>
 		</g>
-		<text transform="matrix(1 0 0 1 89.6005 192.2122)"><tspan x="0" y="0" style="fill:#64A29F; font-family:'Riffic-Bold'; font-size:42.4524px;">NOT ALL</tspan><tspan x="5.434" y="50.943" style="fill:#4B697D; font-family:'Riffic-Bold'; font-size:42.4524px;">HEROES</tspan><tspan x="23.857" y="101.885" style="fill:#64A29F; font-family:'Riffic-Bold'; font-size:42.4524px;">WEAR</tspan><tspan x="19.167" y="152.829" style="fill:#64A29F; font-family:'Riffic-Bold'; font-size:42.4524px;">CAPES</tspan></text>
+		<text transform="matrix(1 0 0 1 89.6005 192.2122)"><tspan x="0" y="0" style="fill:#112731; font-family:'Riffic-Bold'; font-size:42.4524px;">NOT ALL</tspan><tspan x="5.434" y="50.943" style="fill:#112731; font-family:'Riffic-Bold'; font-size:42.4524px;">HEROES</tspan><tspan x="23.857" y="101.885" style="fill:#64A29F; font-family:'Riffic-Bold'; font-size:42.4524px;">WEAR</tspan><tspan x="19.167" y="152.829" style="fill:#64A29F; font-family:'Riffic-Bold'; font-size:42.4524px;">CAPES</tspan></text>
 		<g>
 			<defs>
 				<rect id="SVGID_1_" width="500" height="500"/>

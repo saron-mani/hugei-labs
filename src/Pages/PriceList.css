@@ -1,67 +1,239 @@
+/* --- Main Section Wrapper --- */
 section.tests {
-    background-color: #f2ffff;
-    height: 100dvh;
-    padding: 10%;
-    padding-top: 110px;
+  background-color: #0a0a0a; /* Pure, deep minimalist black/charcoal */
+  min-height: 100dvh;
+  padding: 80px 5%; 
+  color: #ededed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Container to handle horizontal scrolling on smaller screens */
-.table-container {
-  height: 64%;
-  overflow-x: auto;
-  overflow-y: scroll;
-  margin: 20px 0;
+/* --- Main Heading --- */
+section.tests h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 300; /* Lighter font weight for a sleek look */
+  color: #ffffff;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
 }
 
+/* --- Minimalist Search Bar --- */
 .search-container {
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
-.search-container > input{
-padding: 10px 15px;
-width: 100%;
-max-width: 400px;
-border-radius: 5px;
-border: 1px solid #ccc;
-font-size: 1.2rem;
-}
-
-/* Base table styling */
-.table-container > table {
+.search-container > input {
+  padding: 16px 20px;
   width: 100%;
-  border-collapse: collapse; /* Removes double borders */
-  font-size: 14px;
-  text-align: left;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  max-width: 450px;
+  border-radius: 8px; /* Softer, modern rectangle instead of a pill */
+  background-color: #141414; /* Just slightly lighter than the background */
+  border: 1px solid #262626; /* Barely visible border */
+  color: #ededed;
+  font-size: 1.25rem;
+  transition: all 0.2s ease;
 }
 
-/* Table Header styling */
-.table-container > table th {
-  color: white;
-  padding: 12px 15px;
+.search-container > input::placeholder {
+  color: #52525b; /* Very muted gray */
+}
+
+/* Flat focus state - no glowing shadows */
+.search-container > input:focus {
+  outline: none;
+  background-color: #1a1a1a;
+  border-color: #52525b; 
+}
+
+/* --- Masonry Layout --- */
+.departments-container {
+  column-count: 3;
+  column-gap: 40px; /* Increased gap for more breathing room */
+  max-width: 1200px; 
+  margin: 0 auto;    
+}
+
+/* --- Flat, Borderless Cards --- */
+.department-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 40px;
+  background-color: transparent;
+  position: relative; /* <-- NEW: Anchors the fade overlay */
+}
+
+/* --- NEW: The Minimalist Scroll Fade Cue --- */
+.department-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* How tall the fade effect is */
+  /* Fades from transparent to the #0a0a0a background color */
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0), #0a0a0a 90%);
+  pointer-events: none; /* Crucial: lets users still click/scroll through the fade */
+}
+
+/* --- Minimalist Headings --- */
+.department-card h3 {
+  color: #ffffff; 
+  /* Removed the bottom border entirely */
+  padding-bottom: 0;
+  margin: 0 0 20px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Wide tracking is a staple of modern minimalism */
+  opacity: 0.8;
+}
+
+/* --- Scrollable List --- */
+.list-container {
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px; 
+  padding-bottom: 50px; /* <-- NEW: Ensures the last item clears the fade */
+}
+
+.test-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- The List Items --- */
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0; /* Padding only on top/bottom, flushing text to the edges */
+  border-bottom: 1px solid #1f1f1f; /* Ultra-thin separator lines instead of boxes */
+  transition: opacity 0.2s ease;
+  cursor: default; 
+}
+
+/* Remove border on the last item for a cleaner finish */
+.test-item:last-child {
+  border-bottom: none;
+}
+
+/* Hovering just highlights the item by dimming the background slightly */
+.test-item:hover {
+  opacity: 0.6; /* A subtle fade out is more elegant than moving/shifting elements */
+}
+
+.test-name {
+  color: #a1a1aa; /* Muted gray for the test name */
+  font-size: 1.1rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+}
+
+.test-price {
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #a1a1aa; /* Stark white price creates the contrast hierarchy */
+  flex-shrink: 0;
+}
+
+/* --- Responsive Fallbacks --- */
+@media (max-width: 1024px) {
+  .departments-container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .departments-container {
+    column-count: 1;
+  }
+  section.tests {
+    padding: 60px 5%;
+  }
+}
+
+/* --- Invisible/Ultra-Minimal Scrollbar --- */
+.list-container::-webkit-scrollbar {
+  width: 2px; /* Razor thin */
+}
+.list-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list-container::-webkit-scrollbar-thumb {
+  background: #262626; 
+}
+.list-container::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
+/* --- Floating Hover Card (Locked Position) --- */
+.hover-tooltip-card {
+  position: fixed; 
+  z-index: 9999;
+  
+  /* Premium Dark Glass Effect */
+  background-color: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #262626;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  
+  padding: 16px;
+  width: 250px;
+  height: auto;
+  color: #ededed;
+  
+  /* CRITICAL: Stops the card from blocking your mouse */
+  pointer-events: none; 
+  
+  opacity: 0;
+  animation: tooltipFadeIn 0.15s ease-out forwards;
+}
+
+@keyframes tooltipFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hover-tooltip-card h4 {
+  margin: 0 0 12px 0;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
-  background-color: #112731;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
 }
 
-/* Table Body Cells styling */
-.table-container > table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #dddddd;
-  font-size: 1rem;
+.tooltip-details p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: left;
+  gap: 16px;
+  color: #a1a1aa; 
 }
 
-/* Alternating row colors (Zebra striping) */
-.table-container > table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+.tooltip-details p span {
+  font-weight: 500;
+  color: #71717a; 
 }
 
-/* Hover effect for rows */
-.table-container > table tbody tr:hover {
-  background-color: #f1f1f1;
+.tooltip-details .tooltip-price {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #333;
+  color: #ffffff;
+  font-size: 1.05rem;
 }
 
-/* Highlight the last row or specific adjustments */
-.table-container > table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+.tooltip-details .tooltip-price span {
+  color: #a1a1aa;
 }

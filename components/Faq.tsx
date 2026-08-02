@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './styles/Faq.css';
 
 // Define the shape of our FAQ data
