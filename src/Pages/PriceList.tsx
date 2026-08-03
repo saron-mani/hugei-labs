@@ -93,7 +93,7 @@ function Tests() {
                       onMouseLeave={() => setHoveredTest(null)}
                     >
                       <span className="test-name">{item.name}</span>
-                      <span className="test-price">₹{item.price}</span>
+                      <span className="test-price">{item.price}</span>
                     </li>
                   ))}
                 </ul>

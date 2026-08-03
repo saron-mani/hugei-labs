@@ -44,7 +44,7 @@ body {
   padding: 0 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  background: linear-gradient(to right, rgba(200,200,200,0.4), rgba(0,0,0,0));
+  background: linear-gradient(to right, rgba(235,235,235,0.7), rgba(0,0,0,0));
 }
 
 .navbar-brand {
