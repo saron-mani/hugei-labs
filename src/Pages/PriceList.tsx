@@ -7,7 +7,7 @@ interface TestItem {
 }
 
 import { useState, useContext, useEffect } from "react";
-import './PriceList.css';
+import './styles/PriceList.css';
 import { PriceListContext } from './PriceListContext'; 
 import NavBar from "../../components/NavBar";
 import PageHero from "../../components/PageHero"

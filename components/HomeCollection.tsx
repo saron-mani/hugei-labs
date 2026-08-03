@@ -1,8 +1,6 @@
 
 import './styles/HomeCollection.css';
 import AppleButton from './AppleButton';
-import HomeCollectionArt from "../public/home-collection-art.svg"
-// import { ReactComponent as HomeCollectionImg } from './assets/home-collection.svg'; 
 
 const HomeCollection = () => {
   return (
@@ -11,7 +9,7 @@ const HomeCollection = () => {
 
         {/* Left Side: SVG Artwork */}
         <div className="home-collection-artwork">
-            <img src={HomeCollectionArt} alt="home collection" />
+            <img src="/home-collection-art.svg" alt="home collection" />
         </div>
 
         {/* Right Side: Text and Call to Action */}

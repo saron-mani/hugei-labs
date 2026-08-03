@@ -2,7 +2,7 @@
   /* A soft, clinical blue-gray that conveys hygiene and trust */
   background: 
   linear-gradient(rgba(235, 253, 226, 0.5), rgba(255, 255, 255, 0.6)),
-  url(../../public/texture.jpg);
+  url(/texture.jpg);
   padding: 5rem 2rem;
   font-family: system-ui, -apple-system, sans-serif;
   text-align: center; /* Centering works best for short summary sections */
