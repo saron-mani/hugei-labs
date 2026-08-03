@@ -6,7 +6,7 @@ interface TestItem {
   prerequisite: string;
 }
 
-import { useState, useContext, useEffect, useRef } from "react";
+import { useState, useContext, useEffect } from "react";
 import './PriceList.css';
 import { PriceListContext } from './PriceListContext'; 
 import NavBar from "../../components/NavBar";
@@ -147,7 +147,7 @@ export default function PriceList() {
     <NavBar />
     <PageHero text="Price List" subText="All our tests and packages" />
     <Tests /> 
-    {/*<Pakages />*/}
+    <Pakages />
     <Footer />
     </>
   )
