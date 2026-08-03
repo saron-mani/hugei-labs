@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './styles/Navbar.css';
+import './styles/NavBar.css';
+import NameImage from "../public/name-img.png"
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
         
         {/* Brand / Logo (Left) */}
         <a href="/" className="navbar-brand pt-sans-narrow-bold">
-          <img src="../src/assets/name-img.png" alt="Logo" />
+          <img src={NameImage} alt="Logo" />
           <span className="brand-text"></span>
         </a>
 

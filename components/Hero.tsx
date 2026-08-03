@@ -1,4 +1,5 @@
 import AppleButton from "./AppleButton"
+import HeroArt from "../public/hero-art.svg"
 import "./styles/Hero.css"
 
 export default function Hero() {
@@ -11,7 +12,7 @@ export default function Hero() {
                 <AppleButton text="Call Us" to="tel:+91 8281 956 994" />
             </div>
             <div className="artwork">
-                <img src="../src/assets/art-blood-test.svg" alt="artwork" />
+                <img src={HeroArt} alt="artwork" />
             </div>
         </section>
     )

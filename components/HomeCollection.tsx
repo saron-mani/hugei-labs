@@ -1,7 +1,7 @@
 
 import './styles/HomeCollection.css';
 import AppleButton from './AppleButton';
-// import your SVG file here once you have it
+import HomeCollectionArt from "../public/home-collection-art.svg"
 // import { ReactComponent as HomeCollectionImg } from './assets/home-collection.svg'; 
 
 const HomeCollection = () => {
@@ -11,7 +11,7 @@ const HomeCollection = () => {
 
         {/* Left Side: SVG Artwork */}
         <div className="home-collection-artwork">
-            <img src="../src/assets/art-home-collection.svg" alt="home collection" />
+            <img src={HomeCollectionArt} alt="home collection" />
         </div>
 
         {/* Right Side: Text and Call to Action */}
