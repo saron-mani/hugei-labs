@@ -27,13 +27,22 @@ body {
   width: 100%;
   height: 72px;
   z-index: 1000;
-  
-  /* The main iOS navbar blur */
+}
+
+/* FIX 1: Apply glass to a background layer so it doesn't clip the dropdown */
+.lab-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(255, 255, 255, 0.4); 
   -webkit-backdrop-filter: blur(20px) saturate(150%);
   backdrop-filter: blur(20px) saturate(150%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  z-index: -1; 
 }
 
 .navbar-container {
@@ -105,7 +114,11 @@ body {
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 992px) {
-  .navbar-container { padding: 0 1rem; }
+  .navbar-container {
+    padding: 0 1rem;
+    background: rgba(0,0,0,0);
+    border-style: none;
+  }
   
   .mobile-toggle {
     display: block; /* Visible on mobile */
@@ -135,10 +148,16 @@ body {
     top: 72px;
     left: 0;
     right: 0;
-    /* Deep blur for mobile menu dropdown */
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    
+    /* FIX 2: Lowered opacity from 0.95 to 0.4 so blur shows through */
+    background: rgba(255, 255, 255, 0.4);
+    
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
+    
+    /* FIX 3: Hardware acceleration prevents overflow: hidden from breaking blur in Safari */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     
     flex-direction: column;
     align-items: stretch;
