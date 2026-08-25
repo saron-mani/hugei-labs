@@ -17,15 +17,14 @@ section.hero {
   transform: scale(1.01); 
 }
 
-/* Keyframes for the entrance animation */
 @keyframes slideFadeUp {
   0% {
     opacity: 0;
-    transform: translateY(50px); /* Slides up from 50px below */
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);    /* Settles into its natural position */
+    transform: translateY(0);
   }
 }
 
@@ -35,10 +34,7 @@ section.hero {
   font-family: "PT Sans Narrow", sans-serif;
   font-weight: 700;
   font-style: normal;
-  /* Start invisible before the animation kicks in */
   opacity: 0; 
-  
-  /* The slide fade up animation */
   animation: slideFadeUp 0.6s ease-out forwards;
 }
 
@@ -49,10 +45,7 @@ section.hero {
   font-size: 0.8rem;
   margin-top: 10px;
   margin-left: 0.4rem;
-  /* Start invisible before the animation kicks in */
   opacity: 0; 
-  
-  /* The slide fade up animation */
   animation: slideFadeUp 0.4s ease-out forwards;
 }
 
@@ -71,11 +64,107 @@ hr {
 
 .artwork > img {
   width: 400px;
-  /* 1. Put the transition here so it animates back smoothly */
   transition: transform 2s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
 .artwork > img:hover {
-  /* 2. Use scale() for high-performance, smooth zooming */
   transform: scale(1.02); 
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (MD & SM DEVICES)
+   ========================================= */
+
+/* Tablets Landscape & Smaller Laptops (~1024px) */
+/* Tablets Portrait & Mobile (`md` breakpoint - 768px) */
+@media (max-width: 768px) {
+  section.hero {
+    flex-direction: column; 
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .big-font {
+    width: 90%;
+    /* Centers the block on the screen, but keeps text left-justified inside */
+    margin: 0 auto 40px auto; 
+    display: block; /* Removes flexbox completely */
+    text-align: left; 
+  }
+
+  /* Force h1, p, and hr to share the exact same left edge */
+  .big-font > h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin: 0; /* Strips browser default margins */
+  }
+
+  .big-font > p {
+    margin: 15px 0; /* 0 left/right margin */
+    width: 100%;
+  }
+
+  hr {
+    margin: 15px 0; /* Overrides original 8px left margin to 0 */
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .artwork {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Keeps the illustration centered */
+    padding-right: 0;
+    padding-bottom: 10%;
+  }
+
+  .artwork > img {
+    width: 80%;
+    max-width: 350px; 
+  }
+}/* Tablets Portrait & Mobile (`md` breakpoint - 768px) */
+@media (max-width: 768px) {
+  section.hero {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  .big-font {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text and button */
+    text-align: center;
+  }
+
+  .big-font > h1 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+
+  .big-font > p {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  hr {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .artwork {
+    width: 100%;
+    justify-content: center; /* Center the image */
+    padding-right: 0;
+    padding-bottom: 10%;
+  }
+
+  .artwork > img {
+    width: 80%;
+    max-width: 350px; /* Prevent it from being too huge on wide mobile screens */
+  }
 }

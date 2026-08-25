@@ -69,7 +69,6 @@ const PopularTestsSection: React.FC = () => {
         </div>
 
         <div className="diagnostics-action">
-          
           <AppleButton text="All Tests and Prices &rarr;" to="/tests" />
         </div>
 

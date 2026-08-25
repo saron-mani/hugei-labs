@@ -139,6 +139,7 @@
 
 
 /* Responsive adjustment for mobile screens */
+/* Responsive adjustment for mobile screens */
 @media (max-width: 768px) {
   .home-collection-container {
     flex-direction: column;
@@ -150,7 +151,15 @@
     align-self: center;
   }
   
+  /* Keep the list block centered as a whole, but left-align the text */
+  .benefits-list {
+    display: inline-block; 
+    text-align: left;
+    margin: 0 auto 32px auto;
+  }
+
+  /* Force the flexbox items (icon and text) to align left */
   .benefits-list li {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

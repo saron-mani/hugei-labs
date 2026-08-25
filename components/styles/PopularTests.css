@@ -44,7 +44,6 @@
   letter-spacing: 0.5px;
 }
 
-
 .diagnostics-header p {
   color: #94a3b8; 
   font-size: 0.95rem;
@@ -129,56 +128,104 @@
   height: 3.4rem;
 }
 
-/* 5. Button:*/
-
-.btn-outline {  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
+/* 5. Button */
+.btn-outline {  
   background: #D1EEF7;
-  
-  /* 2. Apply the frosted glass blur and saturation boost */
   backdrop-filter: blur(80px) saturate(150%);
   -webkit-backdrop-filter: blur(20px) saturate(150%);
-  
-  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
   border: 1px solid rgba(2, 132, 199, 0.3);
-    
-  /* 4. Switch the text to the solid brand blue so it remains readable */
   color: rgba(255, 255, 255, 0.8); 
-  /* Add a transparent border so the button dimensions don't jump when the hover border appears */
-  border: 1px solid transparent; 
   border-radius: 8px; 
   padding: 0.875rem 2.25rem;
   font-size: 1.1rem;
   font-weight: 400;
   cursor: pointer;
-  
-  /* Applying the identical buttery-smooth cubic-bezier transition from your NavBar */
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 4px 6px rgba(2, 132, 199, 0.2);
 }
 
-/* Glassy Hover State */
 .btn-outline:hover {
-  /* 1. Drop the base color opacity heavily to let the texture behind it bleed through */
   background: rgba(2, 132, 199, 0.15); 
-  
-  /* 2. Apply the frosted glass blur and saturation boost */
   backdrop-filter: blur(20px) saturate(150%);
   -webkit-backdrop-filter: blur(20px) saturate(150%);
-  
-  /* 3. The crisp glass edge and inner 3D lip matching your navbar */
   border: 1px solid rgba(2, 132, 199, 0.3);
   box-shadow: 
     0 4px 12px rgba(0, 0, 0, 0.05),
     inset 0 1px 1px rgba(255, 255, 255, 0.8);
-    
-  /* 4. Switch the text to the solid brand blue so it remains readable */
   color: rgba(255, 255, 255, 0.75); 
-  
-  /* 5. The physical iOS press shrink */
   transform: scale(0.95); 
 }
 
-/* Active State (When clicked) */
 .btn-outline:active {
-  transform: scale(0.92); /* Slightly deeper press for tactile feedback */
+  transform: scale(0.92);
+}
+
+
+/* =========================================
+   6. RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Medium Devices (Tablets, up to 920px) */
+@media (max-width: 920px) {
+  .diagnostics-section {
+    padding: 2rem 1.5rem; 
+  }
+  
+  .diagnostics-layout-split {
+    gap: 1rem; /* Tighter gap between the two columns */
+  }
+}
+
+/* Small Devices (Mobile Phones, up to 768px) */
+@media (max-width: 768px) {
+  .diagnostics-section {
+    padding: 3rem 1rem;
+    min-height: auto; /* Allows content to flow naturally instead of forcing 100vh */
+  }
+
+  .diagnostics-header {
+    margin-bottom: 2rem;
+  }
+
+  .diagnostics-header h2 {
+    font-size: 2rem; /* Scale down the main title */
+  }
+
+  .diagnostics-header p {
+    font-size: 0.9rem;
+  }
+
+.diagnostics-layout-split {
+    /* Replaces 1fr. This caps the width at 420px so it doesn't over-stretch, 
+       but allows it to shrink on very small screens */
+    grid-template-columns: minmax(auto, 400px); 
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 1.5rem; 
+  }
+
+  .diagnostics-column {
+    padding: 1.25rem 1rem; /* Loosen padding slightly for better mobile touch areas */
+  }
+
+  .section-subheader {
+    font-size: 1.35rem; /* Scale down subheadings */
+  }
+
+  .diagnostic-item {
+    font-size: 1rem; /* Adjust list text size for mobile reading */
+    padding: 0.75rem 0.5rem; /* Slightly taller touch targets for mobile usability */
+  }
+
+  .diagnostics-action {
+    margin-top: 1.5rem;
+    height: auto;
+  }
+
+  /* Optional: Make the button span full width on small screens */
+  .diagnostics-action button, 
+  .diagnostics-action a,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
 }
