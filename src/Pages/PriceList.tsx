@@ -129,13 +129,13 @@ function Tests() {
   );
 }
 
-function Pakages() {
+/*function Packages() {
   return(
-    <section className="pakages">
+    <section className="packages">
       <h2>Packages</h2>
     </section>
   )
-}
+}*/
 
 export default function PriceList() {
   useEffect(() => {
@@ -144,11 +144,11 @@ export default function PriceList() {
 
   return(
     <>
-    {/*<NavBar />
-    <PageHero text="Price List" subText="All our tests and packages" />*/}
+    {/**/}<NavBar />
+    <PageHero text="Price List" subText="All our tests and packages" />
     <Tests /> 
-    {/*<Pakages />
-    <Footer />*/}
+    {/*<Packages />*/}
+    <Footer />
     </>
   )
 }

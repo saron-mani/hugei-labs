@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
 
-        <AppleButton text="Location" to="/#contact" />
+        <AppleButton text="Location" to="#contact" />
       </div>
     </section>
   );
