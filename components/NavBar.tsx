@@ -14,7 +14,7 @@ const Navbar = () => {
         
         {/* Brand / Logo (Left) */}
         <a href="/" className="navbar-brand pt-sans-narrow-bold">
-          <img src="/name-img.png" alt="Logo" />
+          <img src="/name-img.svg" alt="Logo" />
           <span className="brand-text"></span>
         </a>
 

@@ -6,9 +6,9 @@ export default function Hero() {
         <section className="hero">
             <div className="big-font">
                 <h1>WE <br/> TAKE <br/> CARE</h1>
-                <p>THRISSUR IRINJALAKUDA ERNAKULAM ALAPUZHA KOTTAYAM</p>
+                <p>QUICK ACCURATE RESULTS</p>
                 <hr />
-                <AppleButton text="Call Us" to="tel:+91 8281 956 994" />
+                <AppleButton text="Call Us" to="tel:0000000000" />
             </div>
             <div className="artwork">
                 <img src="/hero-art.svg" alt="artwork" />

@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="footer-section locations-section">
           <h4>Our Socials</h4>
           <ul>
-            <li><a target="_blank" href="https://www.facebook.com/CentralLaboratoriesOfficial/">Facebook</a></li>
-            <li><a target="_blank" href="https://www.instagram.com/centrallaboratories/">Instagram</a></li>
-            <li><a target="_blank" href="https://wa.me/918281956994">WhatsApp</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/saron-mani">LinkedIn</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/saronmani_/">Instagram</a></li>
             <li><a target="_blank" href="#">Youtube</a></li>
+            <li><a target="_blank" href="mailto:tosaronmani@gmail.com">Mail</a></li>
           </ul>
         </div>
 
@@ -27,27 +27,27 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/packages">Packages</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Packages</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li><a href="/">Location</a></li>
           </ul>
         </div>
 
         {/* Column 4: Contact */}
         <div className="footer-section contact-section">
           <h4>Contact Us</h4>
-          <p>☎️ 0487 2602861</p>
-          <p>📞 +91 8281 956 994</p>
-          <p>✉️ <a href="mailto:info.centrallabs@gmail.com">info.centrallabs@gmail.com</a></p>
-          <p>📍 Head Office, Central Laboratories, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khadeeja Memorial Building, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vatanappilly 680614</p>
+          <p>☎️ <a href='tel:0000000000'>0000 000000</a></p>
+          <p>📞 <a href='tel:0000000000'>0000 000 000</a></p>
+          <p>✉️ <a href="mailto:tosaronmani@gmail.com">tosaronmani@gmail.com</a></p>
+          <p>📍 Head Office, Hugei Labs, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABCDEF Building, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KERALA 000000</p>
         </div>
 
       </div>
       
       {/* Copyright Bar */}
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Central Laboratories. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} <a href="https://www.linkedin.com/in/saron-mani">Saron Mani</a>. All rights reserved.</p>
       </div>
     </footer>
   );

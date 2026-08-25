@@ -64,11 +64,11 @@ function Tests() {
 
   return (
     <section className="tests">
-      <h2>Individual Tests</h2>
+      <h2>Menu</h2>
       <div className="search-container">
         <input
           type="text"
-          placeholder="Search by name or department..."
+          placeholder="Search by name or category..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -144,11 +144,11 @@ export default function PriceList() {
 
   return(
     <>
-    <NavBar />
-    <PageHero text="Price List" subText="All our tests and packages" />
+    {/*<NavBar />
+    <PageHero text="Price List" subText="All our tests and packages" />*/}
     <Tests /> 
-    <Pakages />
-    <Footer />
+    {/*<Pakages />
+    <Footer />*/}
     </>
   )
 }

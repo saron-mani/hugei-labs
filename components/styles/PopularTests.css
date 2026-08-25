@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  min-height: 90dvh;
+  min-height: 100dvh;
   padding-top: 4%;
 }
 
@@ -103,9 +103,9 @@
 
 .diagnostic-item:hover {
   background-color: #233442; 
-  transform: translateX(4px); 
+  transform: translateX(4px) scale(1.01); 
+  transform-origin: left center; /* Ensures it grows from the left side, not the middle */
   color: #ffffff;
-  font-size: 1.15rem;
   cursor: default;
 }
 

@@ -10,14 +10,14 @@ const AboutSection: React.FC = () => {
         
         <div className="about-content">
           <p>
-            For over four decades, Central Laboratories has been a trusted cornerstone of 
-            healthcare in Kerala. Equipped with state-of-the-art technology and backed by 
-            prestigious NABL and ICMR accreditations, we deliver accurate, timely, and 
+            For over a decades, Hugei Labs has been a trusted cornerstone of 
+            healthcare in Kerala, Karnataka and Tamil Nadu. Equipped with state-of-the-art technology and backed by 
+            prestigious accreditations, we deliver accurate, timely, and 
             accessible diagnostic services you can rely on.
           </p>
         </div>
 
-        <AppleButton text="Read More About Us" to="/#contact" />
+        <AppleButton text="Location" to="/#contact" />
       </div>
     </section>
   );

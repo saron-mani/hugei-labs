@@ -11,11 +11,11 @@ interface FaqItem {
 const faqData: FaqItem[] = [
   { 
     question: "Do I need to fast before my blood test?", 
-    answer: "Many blood tests, like lipid panels or fasting blood glucose, require you to fast for 8-12 hours. We will inform you if your specific test requires fasting when you book. Call +91 8281956994 for clarification."
+    answer: "Many blood tests, like lipid panels or fasting blood glucose, require you to fast for 8-12 hours. We will inform you if your specific test requires fasting when you book."
   },
   { 
     question: "How long does it take to get my results?", 
-    answer: "Most routine blood test results are available within 4 to 36 hours. Specialized tests may take up to a week." 
+    answer: "Most routine blood test results are available within 12 to 36 hours. Specialized tests may take up to a week." 
   },
   { 
     question: "Do I need an appointment, or do you accept walk-ins?", 
