@@ -9,10 +9,10 @@ interface TestItem {
 import { useState, useContext, useEffect } from "react";
 import './styles/PriceList.css';
 import { PriceListContext } from './PriceListContext'; 
-import NavBar from "../../components/NavBar";
+/*import NavBar from "../../components/NavBar";
 import PageHero from "../../components/PageHero"
 import Footer from "../../components/Footer";
-
+*/
 function Tests() {
   const [searchQuery, setSearchQuery] = useState("");
   const { priceListArray, isLoading, error } = useContext(PriceListContext);
@@ -144,11 +144,11 @@ export default function PriceList() {
 
   return(
     <>
-    {/**/}<NavBar />
-    <PageHero text="Price List" subText="All our tests and packages" />
+    {/*<NavBar />
+    <PageHero text="Price List" subText="All our tests and packages" />*/}
     <Tests /> 
-    {/*<Packages />*/}
-    <Footer />
+    {/*<Packages />
+    <Footer />*/}
     </>
   )
 }
