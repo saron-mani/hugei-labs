@@ -90,7 +90,6 @@ hr {
     margin: 0 auto 40px auto; 
     display: block; /* Removes flexbox completely */
     text-align: left; 
-    background-color: blue;
   }
 
   /* Force h1, p, and hr to share the exact same left edge */
@@ -117,7 +116,6 @@ hr {
     justify-content: center; /* Keeps the illustration centered */
     padding-right: 0;
     padding-bottom: 10%;
-    background-color: red;
   }
 
   .artwork > img {
